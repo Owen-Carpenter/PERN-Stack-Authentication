@@ -31,7 +31,7 @@ export function Login() {
               alert("Incorrect email or password");
             }
           })
-          .catch((err) => console.log(err));
+          .catch((err) => console.log(err.message));
     };
     
     return (
@@ -58,6 +58,7 @@ export function Login() {
             </div>
             <section className="auth-section">
                 <div className="auth-container">
+                    <img className='auth-logo' src="../public/assets/logo.webp" alt="" />
                     <h1>Login</h1>
                     <form onSubmit={handleLoginSubmit}>
                         <div className="form-group">

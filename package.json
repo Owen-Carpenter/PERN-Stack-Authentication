@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently \"npm run server\" \"npm run client\"",
+    "setup-db": "cross-env hero42881123 psql -U postgres -f server/database/database.sql",
     "server": "node server/server.js",
     "client": "cd client && npm run dev"
   },
@@ -14,5 +15,8 @@
   "license": "ISC",
   "dependencies": {
     "concurrently": "^9.1.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }

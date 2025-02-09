@@ -15,7 +15,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 500px;
+    height: auto;
     width: 400px;
     margin: 0 auto;
     border-radius: 25px;
@@ -51,6 +51,17 @@
     transition: .3s ease;
 }
 
+.auth-container .auth-logo{
+  height: 50px;
+  width: 50px;
+}
+
+.auth-container .auth-logo img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .auth-container button:hover{
     background-color: #0084ff;
     color: white;
@@ -67,6 +78,7 @@
     font-size: 16px;
     font-weight: 500;
     margin: 10px 0px;
+    padding-top: 20px;
 }
 
 .auth-container span {
@@ -85,6 +97,7 @@
 
 body {
     display: flex; 
+    background-color: #f2f2f2;
     justify-content: center;
     align-items: center;
     width: 100%;

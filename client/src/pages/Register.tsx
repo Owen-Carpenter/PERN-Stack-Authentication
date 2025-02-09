@@ -26,16 +26,20 @@ export function Register() {
             return;
         }
         
-        axios.post("http://localhost:8080/register", {username, email, password})
+        axios.post("http://localhost:8080/register", {username, password, email})
         .then(result => {
             setSuccess("Registration successful")
             console.log(result);
             navigate('/login');
         })
         .catch(err => {
-            console.log(err);
-            setError("An error occurred during registration. Please try again.");
+            if (err.response && err.response.status === 409) {
+                setError("Username already exists");
+            } else {
+                setError("An error occurred during registration. Please try again.");
+            }
             setSuccess("");
+            console.log(err);
         });
     }
     
@@ -63,6 +67,7 @@ export function Register() {
             </div>
             <section className="auth-section">
                 <div className="auth-container">
+                    <img className='auth-logo' src="../public/assets/logo.webp" alt="" />
                     <h1>Register</h1>
                     <form onSubmit={handleRegisterSubmit}>
                     <div className="form-group">
