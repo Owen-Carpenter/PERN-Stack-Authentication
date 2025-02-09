@@ -16,3 +16,8 @@
  ### Open a new terminal and run "npm start"
      - This will configure the front and backend concurrently
      - This will configure the connection pool using Postgres
+
+## Sources:
+    https://gist.github.com/manuelbieh/3864088 - Batch File Implementation
+    https://dev.to/cwrcode/create-css-fireworks-animation-3nn7 - Firework Background animation
+    https://alvarotrigo.com/blog/animated-backgrounds-css/ - #12 Particles Animation
