@@ -7,8 +7,7 @@
      - NPM is like Maven and Gradle, it is basically a dependency manager and run configurator.
  ### If you don't have Postgres installed!
         Install postgres with their launcher
-        GO TO
-        > System Properties > Advanced > Environment Vars > System Vars > PATH > Edit > Browse > Postgres BIN
+        GO TO: System Properties > Advanced > Environment Vars > System Vars > PATH > Edit > Browse > Postgres BIN
 
 ## Second
  ### Clone the repository using either VSCode or IntelliJ
