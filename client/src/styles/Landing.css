@@ -44,12 +44,10 @@ body {
     width: var(--initialSize);
     aspect-ratio: 1;
     background: 
-      /*
       radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 0% 0%,
       radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 100% 0%,
       radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 100% 100%,
       radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 0% 100%,
-      */
   
       radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 50% 0%,
       radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 100% 50%,

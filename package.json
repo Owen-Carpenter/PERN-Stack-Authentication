@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently \"npm run server\" \"npm run client\"",
-    "setup-db": "cross-env psql -U postgres -f server/database/database.sql",
+    "start": "npm run setup-db && npm run install-client-dependencies && concurrently \"npm run server\" \"npm run client\"",
+    "setup-db": "cross-env PGPASSWORD=hero42881123 psql -U postgres -h localhost -d PERNUser -f server/database/database.sql",
     "server": "node server/server.js",
     "client": "cd client && npm run dev",
     "install-client-dependencies": "cd client && npm install react@18.3.1 react-dom@18.3.1 react-router-dom@7.1.5 axios@1.7.9"
