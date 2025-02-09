@@ -1,6 +1,7 @@
 # How to run PERN Stack
 
 ## First
+ Install NodeJS and NPM or use the Batch File to do it for you!
  ### Run the batch file
     This will install NodeJS and NPM to your machine if it isn't already installed.
      - NodeJS is used for server side backend
