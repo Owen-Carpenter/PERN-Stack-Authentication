@@ -21,3 +21,4 @@
     https://gist.github.com/manuelbieh/3864088 - Batch File Implementation
     https://dev.to/cwrcode/create-css-fireworks-animation-3nn7 - Firework Background animation
     https://alvarotrigo.com/blog/animated-backgrounds-css/ - #12 Particles Animation
+    https://github.com/sambuddha92/pern-boilerplate - PERN Boilerplate
