@@ -67,7 +67,7 @@ export function Register() {
             </div>
             <section className="auth-section">
                 <div className="auth-container">
-                    <img className='auth-logo' src="../public/assets/logo.webp" alt="" />
+                    <img className='auth-logo' src="/client/public/logo.png" alt="" />
                     <h1>Register</h1>
                     <form onSubmit={handleRegisterSubmit}>
                     <div className="form-group">

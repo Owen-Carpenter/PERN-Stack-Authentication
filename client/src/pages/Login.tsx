@@ -55,7 +55,7 @@ export function Login() {
             </div>
             <section className="auth-section">
                 <div className="auth-container">
-                    <img className='auth-logo' src="../public/assets/logo.webp" alt="" />
+                    <img className='auth-logo' src="/client/public/logo.png" alt="" />
                     <h1>Login</h1>
                     <form onSubmit={handleLoginSubmit}>
                         <div className="form-group">
