@@ -1,4 +1,4 @@
-# Instructions to run Tech Stack
+# How to run PERN Stack
 
 ## First
  ### Run the batch file
