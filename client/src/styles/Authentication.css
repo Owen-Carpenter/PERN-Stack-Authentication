@@ -1,5 +1,5 @@
 .auth-section {
-    height: 100vh;
+    height: auto;
     width: 100%;
     display: flex;
     justify-self: center;
@@ -104,7 +104,7 @@
     border: 1px solid #f2f2f2;
     padding: 10px;
     border-radius: 5px;
-    color: #f2f2f2;
+    color: #0084ff;
     font-size: 16px;
     outline: none;
     transition: border-color 0.3s ease;
@@ -112,6 +112,7 @@
 
 .auth-container input:focus {
     border-color: #f2f2f2;
+    background-color: transparent;
 }
 
 body {
