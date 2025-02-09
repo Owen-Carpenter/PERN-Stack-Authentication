@@ -151,3 +151,34 @@ body {
     top: 60%;
     animation-delay: -0.4s;
   }
+
+  .content-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .title{
+    padding-bottom: 100px;
+    color: white;
+    font-size: 32px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .logout-btn a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+  .logout-btn{
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 10px 25px;
+    border: #f2f2f2 1px solid;
+    color: #f2f2f2;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: transparent;
+  }
