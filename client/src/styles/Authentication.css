@@ -95,6 +95,25 @@
     text-decoration: underline;
 }
 
+.auth-container label{
+  color: white;
+}
+
+.auth-container input {
+    background-color: transparent;
+    border: 1px solid #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+    color: #f2f2f2;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.auth-container input:focus {
+    border-color: #f2f2f2;
+}
+
 body {
     display: flex; 
     background-color: #f2f2f2;

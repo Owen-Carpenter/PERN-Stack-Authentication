@@ -2,7 +2,6 @@ import React from 'react'
 import "../styles/Authentication.css"
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-import { useLocation } from 'react-router-dom';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
@@ -10,8 +9,6 @@ export function Login() {
     const[username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const navigate = useNavigate();
-    const location = useLocation();
-    const from = location.state?.form || { pathname: "/"}
 
     const handleLoginSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -26,7 +23,7 @@ export function Login() {
           .then((result) => {
             if (result.data.message === "Login successful") {
               localStorage.setItem("isAuthenticated", "true");
-              navigate(from, { replace: true });
+              navigate('/landing', { replace: true });
             } else if (result.data.message === "Incorrect password") {
               alert("Incorrect email or password");
             }
